@@ -13,10 +13,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProyect"
         mc:Ignorable="d"
-        Title="Menu Principal" Height="300" Width="350" WindowStartupLocation="CenterScreen">
+        Title="Menu Principal" Height="300" Width="350" WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid>
         <StackPanel>
-            <Menu>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/a6bfadc6f39a1008c5368a43e6df3585.jpg"/>
+            </StackPanel.Background>
+            <Menu Foreground="Red">
                 <MenuItem Header=" Registros" Height="21">
                     <MenuItem Header="Condominios" Name="RegistroCondominio" Click="RegistroCondominio_Click"/>
                     <MenuItem Header="Clientes" Name="RegistroCliente" Click="RegistroCliente_Click"/>

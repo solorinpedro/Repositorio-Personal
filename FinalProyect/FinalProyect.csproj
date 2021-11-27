@@ -4,11 +4,12 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon />
+    <ApplicationIcon>Resources\Desig.ico</ApplicationIcon>
     <ReferencePath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\</ReferencePath>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="a6bfadc6f39a1008c5368a43e6df3585.jpg" />
     <None Remove="Resources\Agregar.png" />
     <None Remove="Resources\Buscar.png" />
     <None Remove="Resources\Calcular.png" />
@@ -92,6 +93,12 @@
     <Content Include="Resources\Login.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="a6bfadc6f39a1008c5368a43e6df3585.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
