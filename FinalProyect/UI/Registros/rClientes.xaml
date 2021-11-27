@@ -10,7 +10,7 @@
         <StackPanel Orientation="Vertical" Margin="10">
             <Label Content="Cliente Id"></Label>
             <StackPanel Orientation="Horizontal">
-                <TextBox x:Name="ClienteIdTextBox" Height="23" Width="150" Text="{Binding ClienteId}"></TextBox>
+                <TextBox x:Name="ClienteIdTextBox" Height="25" Width="150" Text="{Binding ClienteId}"></TextBox>
                 <Button x:Name="BuscarButton" Margin="10,0,0,0" Click="BuscarButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/Buscar.png" Height="18"></Image>
@@ -19,34 +19,34 @@
                 </Button>
             </StackPanel>
             <Label Content="Nombres"></Label>
-            <TextBox x:Name="NombreTextBox" Height="23" Text="{Binding Nombre}"></TextBox>
+            <TextBox x:Name="NombreTextBox" Height="25" Text="{Binding Nombre}"></TextBox>
             <Label Content="Apellidos"></Label>
-            <TextBox x:Name="ApellidoTextBox" Height="23" Text="{Binding Apellido}"></TextBox>
+            <TextBox x:Name="ApellidoTextBox" Height="25" Text="{Binding Apellido}"></TextBox>
             <Label Content="Direccion"></Label>
-            <TextBox x:Name="direccionTextBox" Height="23" Text="{Binding Direccion}"></TextBox>
+            <TextBox x:Name="direccionTextBox" Height="25" Text="{Binding Direccion}"></TextBox>
             <StackPanel Orientation="Horizontal">
                 <Label Content="Telefono"></Label>
                 <Label Content="Cédula" Margin="135,0,0,0"></Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBox x:Name="telefonoTextBox" Height="23" Width="144" Text="{Binding Telefono}"></TextBox>
-                <TextBox x:Name="cedulaTextBox" Height="23" Width="150" Margin="50,0,0,0" Text="{Binding Cedula}"></TextBox>
+                <TextBox x:Name="telefonoTextBox" Height="25" Width="144" Text="{Binding Telefono}"></TextBox>
+                <TextBox x:Name="cedulaTextBox" Height="25" Width="150" Margin="50,0,0,0" Text="{Binding Cedula}"></TextBox>
             </StackPanel>
             <Label Content="Detalle" FontWeight="Bold"></Label>
             <StackPanel Orientation="Horizontal">
                 <Label Content="Condominio"></Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <ComboBox x:Name="CondominioComboBox" Height="20" Width="120" SelectedValue="{Binding CondominioId}">
+                <ComboBox x:Name="CondominioComboBox" Height="25" Width="120" SelectedValue="{Binding CondominioId}">
                 </ComboBox>
-                <Button x:Name="AgregarButton" Margin="10,0,0,0" Click="AgregarButton_Click">
+                <Button x:Name="AgregarButton" Margin="10,0,0,0" Click="AgregarButton_Click" Height="35">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/Agregar.png" Height="18"></Image>
                         <Label Content="Agregar"></Label>
                     </StackPanel>
                 </Button>
 
-                <Button x:Name="RemoverButton" Margin="10,0,0,0" Click="RemoverButton_Click">
+                <Button x:Name="RemoverButton" Margin="10,0,0,0" Click="RemoverButton_Click" Height="35">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/Remover.png" Height="18"></Image>
                         <Label Content="Remover"></Label>
@@ -54,7 +54,7 @@
                 </Button>
             </StackPanel>
 
-            <DataGrid x:Name="DetalleDataGrid" Margin="0,5,0,0" Height="150" ItemsSource="{Binding Detalles}" AutoGenerateColumns="False" Background="LightGray">
+            <DataGrid x:Name="DetalleDataGrid" Margin="0,5,0,0" Height="150" ItemsSource="{Binding Detalles}" AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Condominio Id" Binding="{Binding Condominios.CondominioId}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Nombre" Binding="{Binding Condominios.Nombre}"></DataGridTextColumn>
@@ -63,20 +63,20 @@
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                <Button x:Name="NuevoButton" Click="NuevoButton_Click">
+                <Button x:Name="NuevoButton" Click="NuevoButton_Click" Height="35">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/Nuevo.png" Height="18"></Image>
                         <Label Content=" Nuevo "></Label>
                     </StackPanel>
                 </Button>
-                <Button x:Name="GuardarButton" Margin="10,0,0,0" Click="GuardarButton_Click">
+                <Button x:Name="GuardarButton" Margin="10,0,0,0" Click="GuardarButton_Click" Height="35">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/Guardar.png" Height="18"></Image>
                         <Label Content="Guardar"></Label>
                     </StackPanel>
                 </Button>
 
-                <Button x:Name="EliminarButton" Margin="10,0,0,0" Click="EliminarButton_Click">
+                <Button x:Name="EliminarButton" Margin="10,0,0,0" Click="EliminarButton_Click" Height="35">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/Eliminar.png" Height="18"></Image>
                         <Label Content="Eliminar"></Label>

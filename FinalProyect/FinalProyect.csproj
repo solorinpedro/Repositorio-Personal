@@ -48,6 +48,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
     <PackageReference Include="Microsoft.EntityFrameWorkCore.SQLite" Version="5.0.11" />
     <PackageReference Include="Microsoft.EntityFrameWorkCore.tools" Version="5.0.11">
       <PrivateAssets>all</PrivateAssets>
