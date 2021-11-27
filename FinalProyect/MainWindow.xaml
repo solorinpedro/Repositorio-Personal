@@ -1,0 +1,27 @@
+﻿<Window x:Class="FinalProyect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProyect"
+        mc:Ignorable="d"
+        Title="Menu Principal" Height="300" Width="350" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <Menu>
+                <MenuItem Header=" Registros">
+                    <MenuItem Header="Condominios" Name="RegistroCondominio" Click="RegistroCondominio_Click"/>
+                    <MenuItem Header="Clientes" Name="RegistroCliente" Click="RegistroCliente_Click"/>
+                    <MenuItem Header="Roles" Name="RegistroRoles" Click="RegistroRoles_Click"/>
+                    <MenuItem Header="Usuarios" Name="RegistroUsuarios" Click="RegistroUsuarios_Click"/>
+                </MenuItem>
+                <MenuItem Header=" Consultas">
+                    <MenuItem Header="Roles" Name="ConsultaRoles" Click="ConsultaRoles_Click"/>
+                    <MenuItem Header="Usuarios" Name="ConsultasUsuarios" Click="ConsultasUsuarios_Click"/>
+                    <MenuItem Header="Condominio" Name="ConsultaCondominio" Click="ConsultaCondominio_Click"/>
+                    <MenuItem Header="Clientes" Name="ConsultarClientes" Click="ConsultarClientes_Click"/>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+    </Grid>
+</Window>
