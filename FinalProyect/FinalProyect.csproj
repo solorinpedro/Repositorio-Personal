@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -16,6 +16,7 @@
     <None Remove="Resources\Cancelar.png" />
     <None Remove="Resources\Eliminar.png" />
     <None Remove="Resources\Guardar.png" />
+    <None Remove="Resources\inmobiliaria.png" />
     <None Remove="Resources\Login.png" />
     <None Remove="Resources\Nuevo.png" />
     <None Remove="Resources\Remover.png" />
@@ -40,6 +41,9 @@
     <Content Include="Resources\Guardar.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\inmobiliaria.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Nuevo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -49,6 +53,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="InvoicerNETCore" Version="1.0.0" />
+    <PackageReference Include="invoicing.services.sdk.dotNET" Version="2.0.3" />
     <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
     <PackageReference Include="Microsoft.EntityFrameWorkCore.SQLite" Version="5.0.11" />
     <PackageReference Include="Microsoft.EntityFrameWorkCore.tools" Version="5.0.11">

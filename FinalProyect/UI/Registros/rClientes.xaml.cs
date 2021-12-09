@@ -26,7 +26,7 @@ namespace FinalProyect.UI.Consultas
         {
             InitializeComponent();
             this.DataContext = clientes;
-
+            LLenarComboCondominio();
             CondominioComboBox.ItemsSource = CondominiosBLL.GetList();
             CondominioComboBox.SelectedValuePath = "CondoinioId";
             CondominioComboBox.DisplayMemberPath = "Nombre";
@@ -69,6 +69,10 @@ namespace FinalProyect.UI.Consultas
                 CondominioComboBox.Focus();
                 mensajeValidacion = "Debe de seleccionar una condominio";
             }
+            if (ClientesBLL.ExisteCedula(cedulaTextBox.Text))
+            {
+                MessageBox.Show("Debe ingresar una cedula que no exista....");
+            }
 
             if (mensajeValidacion.Length > 0)
             {
@@ -77,6 +81,21 @@ namespace FinalProyect.UI.Consultas
             }
 
             return mensajeValidacion.Length == 0;
+        }
+        private void LLenarComboCondominio()
+        {
+            this.CondominioComboBox.ItemsSource = CondominiosBLL.GetList(x => true);
+            this.CondominioComboBox.SelectedValuePath = "CondominioId";
+            this.CondominioComboBox.DisplayMemberPath = "Nombre";
+
+            if (CondominioComboBox.Items.Count > 0)
+            {
+                CondominioComboBox.SelectedIndex = 0;
+            }
+        }
+        private void GuardarComboBox()
+        {
+            clientes.CondominioId = CondominioComboBox.SelectedValue.ToString().Length;
         }
         private void Cargar()
         {
@@ -155,6 +174,7 @@ namespace FinalProyect.UI.Consultas
         {
             if (ClientesBLL.Eliminar(Utilidades.ToInt(ClienteIdTextBox.Text)))
             {
+                Limpiar();
                 MessageBox.Show("Se elimino con exito", 
                     "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
             }

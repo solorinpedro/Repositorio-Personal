@@ -74,5 +74,11 @@ namespace FinalProyect
             cClientes clientes = new cClientes();
             clientes.Show();
         }
+
+        private void Recibos_Click(object sender, RoutedEventArgs e)
+        {
+            rRecibos recibos = new rRecibos();
+            recibos.Show();
+        }
     }
 }

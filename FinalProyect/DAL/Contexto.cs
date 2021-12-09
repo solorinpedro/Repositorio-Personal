@@ -14,11 +14,12 @@ namespace FinalProyect.DAL
         public DbSet<Roles> Roles { get; set; }
         public DbSet<Clientes> Clientes { get; set; }
         public DbSet<Condominios> Condominios { get; set; }
+        public DbSet<Recibos> Recibos { get; set; }
+        public DbSet<TipoCondominios> TipoCondominios { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(@"Data Source = DATA\Proyecto.db");
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Roles>().HasData(new Roles {
@@ -26,8 +27,7 @@ namespace FinalProyect.DAL
                 Descripcion = "Admin"
             });
 
-            modelBuilder.Entity<Usuarios>().HasData(new Usuarios
-            {
+            modelBuilder.Entity<Usuarios>().HasData(new Usuarios {
                 UsuarioId = 1,
                 Nombre = "Pedro",
                 Apellido = "Solorin",
@@ -36,6 +36,16 @@ namespace FinalProyect.DAL
                 //1234
                 FechaCreacion = DateTime.Now,
                 RolId = 1
+            });
+            modelBuilder.Entity<TipoCondominios>().HasData(new TipoCondominios {
+                TipoCondominioId = 1,
+                Tipo = "Apartamento"
+
+            });
+            modelBuilder.Entity<TipoCondominios>().HasData(new TipoCondominios {
+                TipoCondominioId = 2,
+                Tipo = "Parqueo"
+
             });
         }
     }

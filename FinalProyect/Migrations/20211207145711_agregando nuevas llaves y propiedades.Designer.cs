@@ -3,14 +3,16 @@ using System;
 using FinalProyect.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FinalProyect.Migrations
 {
     [DbContext(typeof(Contexto))]
-    partial class ContextoModelSnapshot : ModelSnapshot
+    [Migration("20211207145711_agregando nuevas llaves y propiedades")]
+    partial class agregandonuevasllavesypropiedades
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -203,7 +205,7 @@ namespace FinalProyect.Migrations
                             UsuarioId = 1,
                             Apellido = "Solorin",
                             Clave = "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-                            FechaCreacion = new DateTime(2021, 12, 7, 11, 35, 14, 546, DateTimeKind.Local).AddTicks(6098),
+                            FechaCreacion = new DateTime(2021, 12, 7, 10, 57, 11, 253, DateTimeKind.Local).AddTicks(3583),
                             Nombre = "Pedro",
                             NombreUsuario = "Admin",
                             RolId = 1

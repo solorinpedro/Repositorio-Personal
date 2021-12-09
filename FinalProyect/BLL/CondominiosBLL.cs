@@ -67,28 +67,6 @@ namespace FinalProyect.BLL
             return paso;
 
         }
-        public static float BuscarDevuelta(int id)
-        {
-            var contexto = new Contexto();
-            var devuelta = new Condominios();
-
-            try
-            {
-                devuelta = contexto.Condominios.Find(id);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            finally
-            {
-                contexto.Dispose();
-            }
-
-            return devuelta.Devolucion;
-        }
-
         public static bool Modificar(Condominios condominios)
         {
             bool paso = false;

@@ -9,14 +9,7 @@
     <Grid>
         <StackPanel Orientation="Vertical" Margin="10, 5, 10, 0">
             <StackPanel Orientation="Horizontal" Height="58">
-                <StackPanel>
-                    <Label Content="Desde:"/>
-                    <DatePicker x:Name="DesdeDataPicker"/>
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="5,0">
-                    <Label Content="Hasta:"/>
-                    <DatePicker x:Name="HastaDataPicker" />
-                </StackPanel>
+              
                 <StackPanel Margin="5,0">
                     <Label Content="Filtro: "/>
                     <ComboBox x:Name="FiltroComboBox" Width="100">
@@ -37,11 +30,9 @@
             <StackPanel HorizontalAlignment="Left">
                 <DataGrid x:Name="DatosDataGrid" Height="240" Width="586" AutoGenerateColumns="False">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Condominio Id" Binding="{Binding CondominioId}"/>
-                        <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}"/>
-                        <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}"/>
-                        <DataGridTextColumn Header="Precio" Binding="{Binding Precio}"/>
-                        <DataGridTextColumn Header="Efectivo" Binding="{Binding Efectivo}"/>
+                        <DataGridTextColumn Header="Condominio Id" Binding="{Binding CondominioId}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Precio" Binding="{Binding Costo}" IsReadOnly="True"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </StackPanel>

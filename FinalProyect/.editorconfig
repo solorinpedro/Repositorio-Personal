@@ -107,3 +107,6 @@ csharp_preferred_modifier_order = public,private,protected,static,readonly,overr
 
 #prefer is expression with type casts instead of pattern matching
 csharp_style_pattern_matching_over_as_with_null_check = false:suggestion
+
+# IDE0005: Using directive is unnecessary.
+dotnet_diagnostic.IDE0005.severity = none

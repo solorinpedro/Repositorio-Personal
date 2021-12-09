@@ -184,7 +184,44 @@ namespace FinalProyect.BLL
 
             return lista;
         }
+        public static bool ExisteNombre(string nombre)
+        {
+            Contexto contexto = new Contexto();
+            bool encontrado = false;
+            try
+            {
+                encontrado = contexto.Clientes.Any(e => e.Nombre.ToLower() == nombre.ToLower());
+            }
+            catch (Exception)
+            {
 
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return encontrado;
+        }
+        public static bool ExisteCedula(string cedula)
+        {
+            Contexto contexto = new Contexto();
+            bool encontrado = false;
+            try
+            {
+                encontrado = contexto.Clientes.Any(e => e.Cedula.ToLower() == cedula.ToLower());
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return encontrado;
+        }
         public static List<Clientes> GetClientes()
         {
             List<Clientes> lista = new List<Clientes>();

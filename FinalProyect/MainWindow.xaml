@@ -25,6 +25,7 @@
                     <MenuItem Header="Clientes" Name="RegistroCliente" Click="RegistroCliente_Click"/>
                     <MenuItem Header="Roles" Name="RegistroRoles" Click="RegistroRoles_Click"/>
                     <MenuItem Header="Usuarios" Name="RegistroUsuarios" Click="RegistroUsuarios_Click"/>
+                    <MenuItem Header="Recibos" Name="Recibos" Click="Recibos_Click "/>
                 </MenuItem>
                 <MenuItem Header=" Consultas" Height="22">
                     <MenuItem Header="Roles" Name="ConsultaRoles" Click="ConsultaRoles_Click"/>

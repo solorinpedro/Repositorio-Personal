@@ -8,23 +8,17 @@ using System.Threading.Tasks;
 
 namespace FinalProyect.Entidades
 {
-    public class Clientes
+    public class Recibos
     {
         [Key]
-        public int ClienteId { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string Direccion { get; set; }
-        public string Telefono { get; set; }
-        public string Cedula { get; set; }
+        public int ReciboId { get; set; }
+
         [ForeignKey("CondominioId")]
         public int CondominioId { get; set; }
         public virtual Condominios Condominios { get; set; }
+
         [ForeignKey("ClienteId")]
-        public List<ClientesDetalle> Detalles { get; set; } = new List<ClientesDetalle>();
-        public Clientes()
-        {
-            ClienteId = 0;
-        }
+        public int ClienteId { get; set; }
+        public virtual Clientes Clientes { get; set; }
     }
 }
