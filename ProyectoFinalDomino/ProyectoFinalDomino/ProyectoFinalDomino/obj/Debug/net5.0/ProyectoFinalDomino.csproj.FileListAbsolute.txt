@@ -1,0 +1,16 @@
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\bin\Debug\net5.0\ProyectoFinalDomino.exe
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\bin\Debug\net5.0\ProyectoFinalDomino.deps.json
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\bin\Debug\net5.0\ProyectoFinalDomino.runtimeconfig.json
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\bin\Debug\net5.0\ProyectoFinalDomino.runtimeconfig.dev.json
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\bin\Debug\net5.0\ProyectoFinalDomino.dll
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\bin\Debug\net5.0\ref\ProyectoFinalDomino.dll
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\bin\Debug\net5.0\ProyectoFinalDomino.pdb
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\obj\Debug\net5.0\ProyectoFinalDomino.csprojAssemblyReference.cache
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\obj\Debug\net5.0\ProyectoFinalDomino.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\obj\Debug\net5.0\ProyectoFinalDomino.AssemblyInfoInputs.cache
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\obj\Debug\net5.0\ProyectoFinalDomino.AssemblyInfo.cs
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\obj\Debug\net5.0\ProyectoFinalDomino.csproj.CoreCompileInputs.cache
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\obj\Debug\net5.0\ProyectoFinalDomino.dll
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\obj\Debug\net5.0\ref\ProyectoFinalDomino.dll
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\obj\Debug\net5.0\ProyectoFinalDomino.pdb
+C:\Users\Hernandez\Desktop\ProyectoFinalDomino\ProyectoFinalDomino\obj\Debug\net5.0\ProyectoFinalDomino.genruntimeconfig.cache
